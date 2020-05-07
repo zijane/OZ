@@ -36,7 +36,7 @@ while i < page_count:
     page.appendChild(root.createTextNode(str(i)))
     p = root.createElement("p")
     div.appendChild(p)
-    p.appendChild(root.createTextNode(pge.getText("text").replace("\n", " "))) 
+    p.appendChild(root.createTextNode(page.getText("text").replace("\n", " "))) 
     i += 1
 xml_str = root.toprettyxml('\t')
 save_path = ("test.xml")
